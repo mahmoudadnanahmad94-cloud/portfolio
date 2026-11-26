@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platinum Integrated Solutions — Website Showcase | Mahmoud Adnan Ahmad</title>
+<meta name="description" content="Interactive showcase of the bilingual WordPress website Mahmoud Adnan Ahmad designed and built for Platinum Integrated Solutions.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#1170e8;--brand3:#6aa8ff;--n950:#040c1d;--n900:#071630;--n800:#0c2247;--ink:#0b1628;--muted:#5a6677;--line:#e5eaf2;--soft:#f4f7fb;--or:#F26B21;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Manrope,system-ui,sans-serif;background:#EFEAE2;color:var(--ink);line-height:1.55}
+html[dir=rtl] body,html[dir=rtl] .site{font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* portfolio wrapper */
+.pf-top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e7dfd3;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+.pf-top .in{max-width:1180px;margin:auto;display:flex;align-items:center;gap:14px;padding:12px 20px;direction:ltr;font-family:Manrope,sans-serif}
+.pf-back{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--or);font-size:.92rem}
+.pf-top .tag{margin-left:auto;font-size:.8rem;font-weight:700;background:#F26B2115;color:var(--or);border:1px solid #F26B2140;border-radius:99px;padding:5px 12px}
+.pf-intro{max-width:1180px;margin:auto;padding:38px 20px 10px;direction:ltr;font-family:Manrope,sans-serif}
+.pf-intro small{color:var(--or);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}
+.pf-intro h1{font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.15;margin:8px 0 10px;color:#1F2A37}
+.pf-intro p{color:#5b6472;max-width:760px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:22px 0 6px}
+.feat a{background:#fff;border:1px solid #e7dfd3;border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;transition:.2s}
+.feat a:hover{transform:translateY(-3px);border-color:var(--or);box-shadow:0 10px 24px -12px #F26B2160}
+.feat i{font-style:normal;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#F26B2115;color:var(--or);font-size:1.1rem;flex:none}
+.feat b{display:block;font-size:.92rem;color:#1F2A37}.feat span{font-size:.8rem;color:#6b7280}
+
+/* browser frame */
+.frame{max-width:1180px;margin:22px auto 50px;padding:0 20px}
+.chrome{background:#fff;border-radius:16px 16px 0 0;border:1px solid #ddd3c4;border-bottom:0;display:flex;align-items:center;gap:8px;padding:10px 14px;direction:ltr}
+.chrome i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.chrome i:nth-child(2){background:#febc2e}.chrome i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;margin-left:10px;background:#f2f2f2;border-radius:8px;padding:5px 12px;font-size:.8rem;color:#666;font-family:Manrope,sans-serif}
+.site{position:relative;background:#fff;border:1px solid #ddd3c4;border-radius:0 0 16px 16px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.35)}
+
+/* ===== Platinum demo site ===== */
+.wrap{max-width:1080px;margin:auto;padding:0 24px}
+.topbar{background:var(--n950);color:#b9c6dc;font-size:.78rem}
+.topbar .wrap{display:flex;justify-content:space-between;padding-block:8px;gap:12px}
+.topbar span{display:inline-flex;gap:6px;align-items:center;margin-inline-end:16px}
+.hdr{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.hdr .wrap{display:flex;align-items:center;gap:18px;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--n800));display:grid;place-items:center;color:#fff;font-weight:800}
+.brand strong{display:block;font-weight:800;letter-spacing:.08em;font-size:.98rem;line-height:1}
+.brand small{font-size:.56rem;letter-spacing:.18em;color:var(--muted);font-weight:700}
+.nav{display:flex;gap:4px;margin-inline-start:auto}
+.nav button{background:none;border:0;padding:8px 12px;border-radius:9px;font-weight:600;font-size:.88rem;color:#2a3a55}
+.nav button:hover,.nav button.on{background:var(--soft);color:var(--brand)}
+.lang{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 14px;font-weight:700;font-size:.82rem;color:var(--brand)}
+.btnp{background:var(--brand);color:#fff;border:0;border-radius:11px;padding:11px 18px;font-weight:700;display:inline-flex;gap:8px;align-items:center;box-shadow:0 10px 24px -10px #1170e8}
+.btnp:hover{background:#0b57c4}
+.btng{background:#ffffff14;color:#fff;border:1px solid #ffffff40;border-radius:11px;padding:11px 18px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+
+.view{display:none}.view.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.hero{background:radial-gradient(900px 400px at 80% 0%,#1170e855,transparent),linear-gradient(160deg,var(--n900),var(--n950));color:#fff;padding:64px 0 54px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:44px 44px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--brand3);display:flex;gap:8px;align-items:center}
+html[dir=rtl] .eyebrow{letter-spacing:0}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e33;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px #22c55e00}}
+.hero h1{font-size:clamp(1.8rem,3.6vw,2.9rem);line-height:1.12;margin:14px 0}
+.rot{display:inline-block;color:var(--c);transition:color .4s;min-width:6ch}
+.hero p{color:#c4d1e6;max-width:520px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+.chip{display:inline-flex;gap:7px;align-items:center;background:#ffffff0d;border:1px solid #ffffff26;border-radius:99px;padding:7px 13px;font-size:.84rem;font-weight:600;color:#fff}
+.chip svg{color:var(--c)}.chip:hover{background:var(--c);border-color:var(--c)}.chip:hover svg{color:#fff}
+.bld{background:#ffffff08;border:1px solid #ffffff1f;border-radius:20px;padding:18px;position:relative}
+.badge{position:absolute;background:#fff;color:var(--ink);border-radius:12px;padding:9px 13px;box-shadow:0 14px 30px -10px #0008;font-size:.74rem;display:flex;gap:9px;align-items:center}
+.badge strong{font-size:1.15rem;color:var(--c,var(--brand))}
+.b1{top:14px;inset-inline-start:-20px}.b2{bottom:18px;inset-inline-end:-18px}
+.marq{background:var(--n950);border-top:1px solid #ffffff14;overflow:hidden;white-space:nowrap;padding:12px 0}
+.marq div{display:inline-flex;gap:34px;animation:mq 26s linear infinite;color:#9fb2d2;font-weight:700;font-size:.85rem}
+.marq span{display:inline-flex;gap:8px;align-items:center}.marq svg{color:var(--c)}
+@keyframes mq{to{transform:translateX(-50%)}}html[dir=rtl] .marq div{animation-name:mqr}@keyframes mqr{to{transform:translateX(50%)}}
+
+.sec{padding:56px 0}.sec.soft{background:var(--soft)}
+.sh{margin-bottom:26px}.sh p.e{color:var(--brand);font-weight:800;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
+html[dir=rtl] .sh p.e{letter-spacing:0}
+.sh h2{font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.2;margin-top:6px}
+.divs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.dc{position:relative;border-radius:16px;min-height:250px;overflow:hidden;color:#fff;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(170deg,var(--c2),var(--c) 55%,#071630);text-align:start;border:0;transition:.3s}
+.dc:hover{transform:translateY(-6px);box-shadow:0 20px 40px -18px var(--c)}
+.dc .n{position:absolute;top:12px;inset-inline-end:14px;font-weight:800;opacity:.5}
+.dc .ic{width:40px;height:40px;border-radius:11px;background:#ffffff26;display:grid;place-items:center;font-size:1.2rem;margin-bottom:auto}
+.dc h3{font-size:1rem;margin:10px 0 4px}.dc p{font-size:.78rem;opacity:.85}
+.dc .go{margin-top:10px;font-size:.78rem;font-weight:700;display:flex;gap:6px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+.st{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+.st strong{font-size:1.8rem;color:var(--brand);display:block}.st span{font-size:.8rem;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s}
+.steps li{list-style:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;position:relative}
+.steps b{display:block;color:var(--brand);font-size:.8rem}.steps h4{margin:6px 0 4px;font-size:.95rem}.steps p{font-size:.8rem;color:var(--muted)}
+
+/* division page */
+.dhero{background:linear-gradient(160deg,var(--c),#071630);color:#fff;padding:46px 0 0}
+.dhero h1{font-size:2rem;margin:10px 0 6px}.dhero p{color:#dbe6f7;max-width:560px}
+.crumbs{font-size:.78rem;color:#cdd9ee;display:flex;gap:6px}
+.dsw{display:flex;gap:6px;margin-top:30px;overflow-x:auto;padding-bottom:0}
+.dsw button{background:#ffffff14;color:#fff;border:0;border-radius:10px 10px 0 0;padding:10px 14px;font-weight:700;font-size:.8rem;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.dsw button.on{background:#fff;color:var(--c)}
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.it{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
+.it span{font-weight:800;color:var(--c);font-size:.8rem}.it h3{font-size:.98rem;margin:6px 0 4px}.it p{font-size:.82rem;color:var(--muted)}
+.certs{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.certs span{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:5px 11px;font-size:.76rem;font-weight:700;color:#23406e}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:8px;background:#fff}
+summary{font-weight:700;cursor:pointer;font-size:.92rem}details p{font-size:.85rem;color:var(--muted);margin-top:8px}
+
+/* quote */
+.qgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px;align-items:start}
+.next li{list-style:none;padding:12px 0 12px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px}
+.next b{width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:.8rem;flex:none}
+.next strong{display:block;font-size:.92rem}.next span{font-size:.8rem;color:var(--muted)}
+.form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 20px 50px -30px #0b162855}
+.form label{display:block;font-size:.78rem;font-weight:700;margin:10px 0 5px;color:#33415a}
+.form input,.form textarea,.form select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:.88rem;background:var(--soft)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dpick{display:flex;flex-wrap:wrap;gap:7px}
+.dpick button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 12px;font-size:.8rem;font-weight:700;display:flex;gap:6px;align-items:center}
+.dpick button.on{background:var(--c);border-color:var(--c);color:#fff}
+.cabin{display:none;margin-top:10px;border:1px dashed #1170e866;border-radius:14px;padding:12px;background:#1170e808}
+.cabin.on{display:block;animation:fade .4s}
+.cab{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cab button{border:2px solid var(--line);background:#fff;border-radius:12px;padding:8px;font-size:.75rem;font-weight:700}
+.cab button.on{border-color:var(--brand);box-shadow:0 0 0 3px #1170e822}
+.cab .sw{height:54px;border-radius:8px;margin-bottom:6px;background:var(--g)}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.sent{display:none;text-align:center;padding:30px 10px}.sent.on{display:block;animation:fade .4s}
+.sent .ok{width:64px;height:64px;border-radius:50%;background:#22c55e;color:#fff;display:grid;place-items:center;font-size:1.8rem;margin:0 auto 12px}
+.mail{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:start}
+.mail div{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:.78rem;color:var(--muted)}
+.mail b{display:block;color:var(--ink);font-size:.82rem;margin-bottom:4px}
+
+/* contact */
+.cc{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cc div{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+.cc i{font-style:normal;width:40px;height:40px;border-radius:11px;background:#1170e815;color:var(--brand);display:grid;place-items:center;margin-bottom:10px;font-size:1.1rem}
+.cc small{display:block;color:var(--muted);font-size:.76rem}.cc strong{font-size:.88rem}
+.offices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.office{border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.map{height:150px;background:linear-gradient(135deg,#dfe9f7,#eef3fa);position:relative;background-image:linear-gradient(#cbd9ee 1px,transparent 1px),linear-gradient(90deg,#cbd9ee 1px,transparent 1px);background-size:26px 26px}
+.pin{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);color:#e11d48;font-size:2rem;animation:bob 1.6s infinite}
+@keyframes bob{50%{transform:translate(-50%,-62%)}}
+.office p{padding:12px;font-size:.82rem}
+
+.ftr{background:var(--n950);color:#9fb2d2;padding:34px 0 20px;font-size:.82rem}
+.ftr .cta{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:22px;border-bottom:1px solid #ffffff14;margin-bottom:16px}
+.ftr h3{color:#fff;font-size:1.25rem}
+
+/* floating */
+.fab{position:absolute;bottom:18px;inset-inline-end:18px;display:flex;flex-direction:column;gap:10px;align-items:flex-end;z-index:6}
+.fab .wa{width:50px;height:50px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:1.4rem;box-shadow:0 10px 24px -8px #25d366}
+.fab .bot{background:linear-gradient(135deg,var(--brand),#0b57c4);color:#fff;border:0;border-radius:99px;padding:12px 18px;font-weight:700;display:flex;gap:8px;align-items:center;box-shadow:0 14px 30px -10px #1170e8;position:relative}
+.fab .bot:after{content:"";position:absolute;inset:-4px;border-radius:99px;border:2px solid #1170e8;animation:ring 1.8s infinite}
+@keyframes ring{to{inset:-12px;opacity:0}}
+.chat{position:absolute;bottom:82px;inset-inline-end:18px;width:340px;max-width:calc(100% - 36px);background:#fff;border-radius:18px;box-shadow:0 30px 70px -20px #0b1628aa;overflow:hidden;z-index:7;display:none;border:1px solid var(--line)}
+.chat.on{display:block;animation:fade .3s}
+.chat header{background:linear-gradient(135deg,var(--n800),var(--brand));color:#fff;padding:13px 14px;display:flex;gap:10px;align-items:center}
+.chat header .av{width:36px;height:36px;border-radius:50%;background:#ffffff26;display:grid;place-items:center}
+.chat header small{display:block;opacity:.8;font-size:.7rem}
+.chat header button{margin-inline-start:auto;background:none;border:0;color:#fff;font-size:1.2rem}
+.cbody{height:250px;overflow:auto;padding:12px;background:var(--soft);display:flex;flex-direction:column;gap:8px}
+.msg{max-width:86%;padding:9px 12px;border-radius:14px;font-size:.82rem}
+.msg.b{background:#fff;border:1px solid var(--line);align-self:flex-start}
+.msg.u{background:var(--brand);color:#fff;align-self:flex-end}
+.typing{display:inline-flex;gap:3px}.typing i{width:6px;height:6px;border-radius:50%;background:#9aa;animation:ty 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes ty{50%{transform:translateY(-4px)}}
+.sugg{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line)}
+.sugg button{border:1px solid #1170e840;background:#1170e80d;color:var(--brand);border-radius:99px;padding:5px 10px;font-size:.74rem;font-weight:600}
+.demo-note{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:#071630e6;color:#fff;border-radius:99px;padding:6px 14px;font-size:.75rem;font-weight:700;z-index:8;opacity:0;transition:.3s;pointer-events:none;font-family:Manrope,sans-serif}
+.demo-note.on{opacity:1}
+
+@media(max-width:860px){.hero .wrap,.qgrid{grid-template-columns:1fr}.bld{display:none}.divs{grid-template-columns:repeat(2,1fr)}.items,.steps,.cc,.stats{grid-template-columns:1fr 1fr}.nav{display:none}.offices,.mail{grid-template-columns:1fr}.topbar .hs{display:none}}
+</style>
+</head>
+<body>
+<div class="pf-top"><div class="in"><a class="pf-back" href="project-platinum.html">← Back to project</a><a class="pf-back" href="projects.html" style="color:#5b6472">All projects</a><span class="tag">Interactive showcase</span></div></div>
+
+<div class="pf-intro">
+<small>Website I designed &amp; built</small>
+<h1>Platinum Integrated Solutions — bilingual WordPress website</h1>
+<p>A working preview of the custom WordPress theme I built for a UAE building-systems company with five divisions. Everything inside the browser frame is clickable: switch the language, open a division, request a quote with the elevator cabin picker, or ask the AI Tech Assistant.</p>
+<div class="feat">
+<a href="#" data-go="lang"><i>⇄</i><div><b>English / Arabic</b><span>Instant switch, full right-to-left layout</span></div></a>
+<a href="#" data-go="div"><i>▦</i><div><b>Five division pages</b><span>One template, colour-themed per division</span></div></a>
+<a href="#" data-go="quote"><i>✎</i><div><b>Request a quote</b><span>Cabin-design picker + two automatic emails</span></div></a>
+<a href="#" data-go="chat"><i>✦</i><div><b>AI Tech Assistant</b><span>Claude API, with FAQ fallback</span></div></a>
+<a href="#" data-go="contact"><i>⌖</i><div><b>Contact &amp; maps</b><span>Two offices, WhatsApp, call, email</span></div></a>
+</div>
+</div>
+
+<div class="frame">
+<div class="chrome"><i></i><i></i><i></i><div class="url">platinum · integrated solutions — demo preview</div></div>
+<div class="site" id="site">
+<div class="demo-note" id="note"></div>
+
+<div class="topbar"><div class="wrap"><div><span>📞 +971 50 503 0272</span><span class="hs">✉ Info@platinumelevatorae.com</span><span class="hs" data-en="📍 Abu Dhabi · Dubai" data-ar="📍 أبوظبي · دبي">📍 Abu Dhabi · Dubai</span></div><div><span>WhatsApp</span></div></div></div>
+
+<header class="hdr"><div class="wrap">
+<a class="brand" href="#" data-view="home"><span class="mark">P</span><span><strong>PLATINUM</strong><small>INTEGRATED SOLUTIONS</small></span></a>
+<nav class="nav">
+<button data-view="home" class="on" data-en="Home" data-ar="الرئيسية">Home</button>
+<button data-view="division" data-en="Divisions" data-ar="أقسامنا">Divisions</button>
+<button data-view="home" data-scroll="how" data-en="How we work" data-ar="آلية عملنا">How we work</button>
+<button data-view="contact" data-en="Contact" data-ar="تواصل معنا">Contact</button>
+</nav>
+<button class="lang" id="lang">العربية</button>
+<button class="btnp" data-view="quote" data-en="Request a Quote" data-ar="اطلب عرض سعر">Request a Quote</button>
+</div></header>
+
+<!-- HOME -->
+<section class="view on" id="v-home">
+<div class="hero"><div class="wrap">
+<div>
+<p class="eyebrow"><span class="dot"></span><span data-en="Platinum Integrated Solutions · UAE" data-ar="بلاتينيوم للحلول المتكاملة · الإمارات">Platinum Integrated Solutions · UAE</span></p>
+<h1><span data-en="We make your building" data-ar="نجعل مبناك">We make your building</span> <span class="rot" id="rot"></span></h1>
+<p data-en="Elevators, HVAC, smart homes, security systems and fire-rated doors — one UAE partner that designs, supplies, installs and maintains every system in your building." data-ar="المصاعد، التكييف، المنازل الذكية، الأنظمة الأمنية والأبواب المقاومة للحريق — شريك إماراتي واحد يصمم ويورّد ويركّب ويصون كل أنظمة مبناك.">Elevators, HVAC, smart homes, security systems and fire-rated doors — one UAE partner that designs, supplies, installs and maintains every system in your building.</p>
+<div class="chips" id="chips"></div>
+<button class="btnp" data-view="quote" data-en="✎ Request a Quote" data-ar="✎ اطلب عرض سعر">✎ Request a Quote</button>
+</div>
+<div class="bld">
+<svg viewBox="0 0 300 300" style="width:100%;height:auto;stroke:none" aria-hidden="true">
+<rect x="60" y="40" width="120" height="240" rx="6" fill="#0c2247" stroke="#6aa8ff55"/>
+<rect x="180" y="110" width="70" height="170" rx="6" fill="#0a1c3b" stroke="#6aa8ff33"/>
+<g fill="#6aa8ff22">
+<rect x="74" y="56" width="20" height="14"/><rect x="104" y="56" width="20" height="14"/><rect x="146" y="56" width="20" height="14"/>
+<rect x="74" y="86" width="20" height="14"/><rect x="146" y="86" width="20" height="14"/><rect x="74" y="116" width="20" height="14"/><rect x="146" y="116" width="20" height="14"/>
+<rect x="74" y="146" width="20" height="14"/><rect x="146" y="146" width="20" height="14"/><rect x="74" y="176" width="20" height="14"/><rect x="146" y="176" width="20" height="14"/>
+<rect x="194" y="126" width="16" height="12"/><rect x="220" y="126" width="16" height="12"/><rect x="194" y="156" width="16" height="12"/><rect x="220" y="156" width="16" height="12"/></g>
+<rect x="104" y="80" width="30" height="196" fill="#071630" stroke="#2f6bff66"/>
+<rect x="107" y="230" width="24" height="30" rx="3" fill="#2f6bff"><animate attributeName="y" values="230;90;150;230" dur="7s" repeatCount="indefinite"/></rect>
+<circle cx="215" cy="100" r="9" fill="#14b8a6"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></circle>
+<path d="M200 96 q15 -16 30 0" stroke="#14b8a6" fill="none" stroke-width="2"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></path>
+<circle cx="70" cy="40" r="5" fill="#ef4444"><animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/></circle>
+<rect x="40" y="276" width="230" height="6" rx="3" fill="#6aa8ff33"/>
+</svg>
+<div class="badge b1"><strong>25+</strong><span data-en="years motor lifespan" data-ar="سنة عمر المحركات">years motor lifespan</span></div>
+<div class="badge b2" id="pb" style="--c:#2f6bff"><strong id="pbn">75+</strong><span id="pbl">projects completed</span></div>
+</div>
+</div></div>
+<div class="marq"><div id="marq"></div></div>
+
+<div class="sec"><div class="wrap">
+<div class="sh"><p class="e" data-en="Our Divisions" data-ar="أقسامنا">Our Divisions</p><h2 data-en="Five specialist divisions. One integrated partner." data-ar="خمسة أقسام متخصصة. شريك واحد متكامل.">Five specialist divisions. One integrated partner.</h2></div>
+<div class="divs" id="divs"></div>
+<div class="stats">
+<div class="st"><strong>5</strong><span data-en="Specialized divisions" data-ar="أقسام متخصصة">Specialized divisions</span></div>
+<div class="st"><strong>75+</strong><span data-en="Completed projects" data-ar="مشروع منجز">Completed projects</span></div>
+<div class="st"><strong>25+</strong><span data-en="Elevator types & models" data-ar="نوع وطراز من المصاعد">Elevator types &amp; models</span></div>
+<div class="st"><strong>2</strong><span data-en="Offices · Abu Dhabi & Dubai" data-ar="مكتبان · أبوظبي ودبي">Offices · Abu Dhabi &amp; Dubai</span></div>
+</div>
+</div></div>
+
+<div class="sec soft" id="how"><div class="wrap">
+<div class="sh"><p class="e" data-en="How We Work" data-ar="آلية عملنا">How We Work</p><h2 data-en="From the first idea to long-term care" data-ar="من الفكرة الأولى إلى الرعاية طويلة الأمد">From the first idea to long-term care</h2></div>
+<ol class="steps" id="steps"></ol>
+</div></div>
+</section>
+
+<!-- DIVISION -->
+<section class="view" id="v-division">
+<div class="dhero" id="dhero"><div class="wrap">
+<div class="crumbs"><span data-en="Home" data-ar="الرئيسية">Home</span><span>/</span><span data-en="Divisions" data-ar="أقسامنا">Divisions</span></div>
+<h1 id="dname"></h1><p id="dtag"></p>
+<div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap"><button class="btnp" style="background:#fff;color:var(--ink)" data-view="quote" data-en="✎ Request a Quote" data-ar="✎ اطلب عرض سعر">✎ Request a Quote</button><button class="btng" data-demo="WhatsApp">WhatsApp</button></div>
+<div class="dsw" id="dsw"></div>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="sh"><p class="e" style="color:var(--dc)" data-en="Solutions & Products" data-ar="الحلول والمنتجات">Solutions &amp; Products</p><h2 data-en="What we deliver" data-ar="ماذا نقدم">What we deliver</h2></div>
+<div class="items" id="items"></div>
+<div class="certs" id="certs"></div>
+</div></div>
+<div class="sec soft"><div class="wrap">
+<div class="sh"><p class="e" data-en="FAQ" data-ar="أسئلة شائعة">FAQ</p><h2 data-en="Questions we often get" data-ar="أسئلة تصلنا كثيراً">Questions we often get</h2></div>
+<div id="faq"></div>
+</div></div>
+</section>
+
+<!-- QUOTE -->
+<section class="view" id="v-quote">
+<div class="hero" style="padding:44px 0"><div class="wrap" style="display:block"><h1 style="margin-top:0" data-en="Request a Quote" data-ar="اطلب عرض سعر">Request a Quote</h1><p data-en="Tell us what you need — elevators, HVAC, smart home, security or fire doors. We reply fast, and the consultation is free." data-ar="أخبرنا بما تحتاجه — مصاعد، تكييف، منزل ذكي، أنظمة أمنية أو أبواب حريق. نرد بسرعة والاستشارة مجانية.">Tell us what you need — elevators, HVAC, smart home, security or fire doors. We reply fast, and the consultation is free.</p></div></div>
+<div class="sec"><div class="wrap qgrid">
+<aside><h2 style="font-size:1.3rem;margin-bottom:8px" data-en="What happens next?" data-ar="ماذا يحدث بعد ذلك؟">What happens next?</h2>
+<ol class="next">
+<li><b>1</b><div><strong data-en="We call you" data-ar="نتصل بك">We call you</strong><span data-en="A specialist from the right division contacts you." data-ar="يتواصل معك متخصص من القسم المناسب.">A specialist from the right division contacts you.</span></div></li>
+<li><b>2</b><div><strong data-en="Free site visit" data-ar="زيارة موقع مجانية">Free site visit</strong><span data-en="We check the site and understand your needs." data-ar="نعاين الموقع ونفهم احتياجاتك.">We check the site and understand your needs.</span></div></li>
+<li><b>3</b><div><strong data-en="Clear quotation" data-ar="عرض سعر واضح">Clear quotation</strong><span data-en="Options that fit your budget — no surprises." data-ar="خيارات تناسب ميزانيتك — بدون مفاجآت.">Options that fit your budget — no surprises.</span></div></li>
+</ol></aside>
+<div class="form" id="qform">
+<div id="qfields">
+<label data-en="Which division?" data-ar="أي قسم؟">Which division?</label>
+<div class="dpick" id="dpick"></div>
+<div class="cabin" id="cabin">
+<label style="margin-top:0" data-en="Elevator cabin design" data-ar="تصميم كابينة المصعد">Elevator cabin design</label>
+<div class="cab" id="cab"></div>
+<div class="parts">
+<div><label data-en="Ceiling" data-ar="السقف">Ceiling</label><select><option>Mirror steel</option><option>LED panel</option><option>Gold</option></select></div>
+<div><label data-en="Walls" data-ar="الجدران">Walls</label><select><option>Hairline steel</option><option>Wood</option><option>Glass</option></select></div>
+<div><label data-en="Floor" data-ar="الأرضية">Floor</label><select><option>Marble</option><option>Granite</option><option>PVC</option></select></div>
+</div></div>
+<div class="row2"><div><label data-en="Name *" data-ar="الاسم *">Name *</label><input id="qn" placeholder="Ahmed"></div><div><label data-en="Phone *" data-ar="الهاتف *">Phone *</label><input placeholder="+971"></div></div>
+<div class="row2"><div><label data-en="Email" data-ar="البريد الإلكتروني">Email</label><input placeholder="name@email.com"></div><div><label data-en="City" data-ar="المدينة">City</label><select><option>Abu Dhabi</option><option>Dubai</option><option>Sharjah</option><option>Al Ain</option></select></div></div>
+<label data-en="Project details" data-ar="تفاصيل المشروع">Project details</label><textarea rows="3"></textarea>
+<button class="btnp" style="margin-top:14px;width:100%;justify-content:center" id="qsend" data-en="Send request" data-ar="إرسال الطلب">Send request</button>
+<p style="font-size:.72rem;color:var(--muted);margin-top:8px;text-align:center" data-en="Demo only — nothing is sent from this preview." data-ar="عرض توضيحي فقط — لا يتم إرسال شيء من هذه المعاينة.">Demo only — nothing is sent from this preview.</p>
+</div>
+<div class="sent" id="sent"><div class="ok">✓</div><h3 data-en="Request received!" data-ar="تم استلام طلبك!">Request received!</h3><p style="color:var(--muted);font-size:.88rem" data-en="On the live site, three things happen automatically:" data-ar="في الموقع الفعلي تحدث ثلاثة أشياء تلقائياً:">On the live site, three things happen automatically:</p>
+<div class="mail">
+<div><b data-en="① Saved in the dashboard" data-ar="① يُحفظ في لوحة التحكم">① Saved in the dashboard</b><span data-en="WordPress → Quote Requests, with every detail." data-ar="ووردبريس ← طلبات الأسعار، بكل التفاصيل.">WordPress → Quote Requests, with every detail.</span></div>
+<div><b data-en="② Designed email to sales" data-ar="② إيميل مصمم لفريق المبيعات">② Designed email to sales</b><span data-en="Includes the cabin photo and chosen finishes." data-ar="يتضمن صورة الكابينة والتشطيبات المختارة.">Includes the cabin photo and chosen finishes.</span></div>
+<div style="grid-column:1/-1"><b data-en="③ Thank-you email to the customer" data-ar="③ إيميل شكر للزبون">③ Thank-you email to the customer</b><span data-en="In the language they used, with a WhatsApp button for a faster reply." data-ar="بنفس اللغة التي استخدمها، مع زر واتساب لرد أسرع.">In the language they used, with a WhatsApp button for a faster reply.</span></div>
+</div>
+<button class="btnp" style="margin-top:16px" id="qagain" data-en="Try again" data-ar="جرّب مجدداً">Try again</button></div>
+</div>
+</div></div>
+</section>
+
+<!-- CONTACT -->
+<section class="view" id="v-contact">
+<div class="hero" style="padding:44px 0"><div class="wrap" style="display:block"><h1 style="margin-top:0" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h1><p data-en="Call, WhatsApp, email or visit one of our offices — we are happy to help." data-ar="اتصل، راسلنا على واتساب أو البريد، أو زر أحد مكاتبنا — يسعدنا مساعدتك.">Call, WhatsApp, email or visit one of our offices — we are happy to help.</p></div></div>
+<div class="sec"><div class="wrap">
+<div class="cc">
+<div><i>☎</i><small data-en="Call us" data-ar="اتصل بنا">Call us</small><strong dir="ltr">+971 50 503 0272</strong></div>
+<div><i>✆</i><small>WhatsApp</small><strong data-en="Chat with us" data-ar="راسلنا الآن">Chat with us</strong></div>
+<div><i>✉</i><small data-en="Email" data-ar="البريد الإلكتروني">Email</small><strong style="font-size:.76rem">Info@platinumelevatorae.com</strong></div>
+<div><i>✎</i><small data-en="Quotation" data-ar="عرض سعر">Quotation</small><strong data-en="Request a Quote" data-ar="اطلب عرض سعر">Request a Quote</strong></div>
+</div>
+<div class="offices">
+<div class="office"><div class="map"><span class="pin">📍</span></div><p><b data-en="Abu Dhabi" data-ar="أبوظبي">Abu Dhabi</b><br><span data-en="Corniche Street, 3 Sails Tower, Floor H, Office 1" data-ar="شارع الكورنيش، برج 3 Sails، الطابق H، مكتب 1">Corniche Street, 3 Sails Tower, Floor H, Office 1</span></p></div>
+<div class="office"><div class="map"><span class="pin">📍</span></div><p><b data-en="Dubai" data-ar="دبي">Dubai</b><br><span data-en="Business Bay, Bayswater Tower, Office 210" data-ar="الخليج التجاري، برج Bayswater، مكتب 210">Business Bay, Bayswater Tower, Office 210</span></p></div>
+</div>
+</div></div>
+</section>
+
+<footer class="ftr"><div class="wrap">
+<div class="cta"><div><h3 data-en="Ready to start your project?" data-ar="جاهز لبدء مشروعك؟">Ready to start your project?</h3><p data-en="Free consultation · One partner for five building systems." data-ar="استشارة مجانية · شريك واحد لخمسة أنظمة للمباني.">Free consultation · One partner for five building systems.</p></div><button class="btnp" data-view="quote" data-en="Request a Quote" data-ar="اطلب عرض سعر">Request a Quote</button></div>
+<p data-en="© Platinum Integrated Solutions. All rights reserved." data-ar="© بلاتينيوم للحلول المتكاملة. جميع الحقوق محفوظة.">© Platinum Integrated Solutions. All rights reserved.</p>
+</div></footer>
+
+<div class="fab"><a class="wa" href="#" data-demo="WhatsApp">✆</a><button class="bot" id="botbtn">✦ <span data-en="Your Tech Assistant" data-ar="مساعدك التقني">Your Tech Assistant</span></button></div>
+<div class="chat" id="chat">
+<header><span class="av">✦</span><div><strong data-en="Your Tech Assistant" data-ar="مساعدك التقني">Your Tech Assistant</strong><small data-en="usually replies instantly" data-ar="يرد فوراً">usually replies instantly</small></div><button id="chatx" aria-label="Close">×</button></header>
+<div class="cbody" id="cbody"></div>
+<div class="sugg" id="sugg"></div>
+</div>
+</div>
+</div>
+
+<script>
+const D=[
+{k:"elevators",c:"#2f6bff",c2:"#6aa8ff",ic:"⇅",n:["Platinum Elevator","بلاتينيوم للمصاعد"],s:["Elevators","المصاعد"],v:["move smoothly","يتحرك بسلاسة"],
+ t:["Home, villa, building, panoramic and service elevators — designed, supplied, installed and maintained.","مصاعد منزلية وفلل وبنايات وبانوراما وخدمية — تصميم وتوريد وتركيب وصيانة."],
+ items:[["Home & villa elevators","مصاعد منزلية وفلل","Compact MRL lifts that fit existing villas.","مصاعد MRL مدمجة تناسب الفلل القائمة."],["Building elevators","مصاعد البنايات","Passenger lifts for residential and commercial towers.","مصاعد ركاب للأبراج السكنية والتجارية."],["Panoramic elevators","مصاعد بانوراما","Glass cabins for malls, hotels and atriums.","كبائن زجاجية للمولات والفنادق."],["Service & goods lifts","مصاعد خدمية وبضائع","Heavy-duty lifts for logistics and kitchens.","مصاعد متينة للخدمات والمطابخ."],["MRL motors","محركات MRL","25+ year motor lifespan.","عمر محركات يتجاوز 25 سنة."],["Maintenance contracts","عقود الصيانة","Preventive maintenance and fast repair.","صيانة وقائية وإصلاح سريع."]],
+ certs:["TSE","BSI","TÜV","ISO","CE","ESMA","EuroCert 2014/33/EU"]},
+{k:"hvac",c:"#0ea5a4",c2:"#5eead4",ic:"❄",n:["Platinum HVAC","بلاتينيوم للتكييف"],s:["HVAC","التكييف"],v:["stay cool","يبقى بارداً"],
+ t:["VRF, chillers up to 600 TR, AHUs and ducted AC with our partner Blue Star.","أنظمة VRF ومبردات حتى 600 طن تبريد ووحدات مناولة هواء مع شريكنا Blue Star."],
+ items:[["VRF systems","أنظمة VRF","Efficient multi-zone cooling.","تبريد فعال متعدد المناطق."],["Chillers","المبردات","Up to 600 TR capacity.","سعة حتى 600 طن تبريد."],["AHUs / FAHUs","وحدات مناولة الهواء","Fresh-air handling for large buildings.","مناولة الهواء النقي للمباني الكبيرة."],["Ducted AC","تكييف الدكت","Hidden comfort for villas and offices.","راحة مخفية للفلل والمكاتب."],["Data-centre cooling","تبريد مراكز البيانات","Precision cooling for IT rooms.","تبريد دقيق لغرف الخوادم."],["Maintenance","الصيانة","Design, installation and service.","تصميم وتركيب وخدمة."]],
+ certs:["ISO 9001","ISO 14001","ISO 45001","AHRI","MoIAT ECAS","IGBC Gold"]},
+{k:"smart",c:"#7c3aed",c2:"#c4b5fd",ic:"⌂",n:["Platinum Smart Homes","بلاتينيوم للمنازل الذكية"],s:["Smart Homes","المنازل الذكية"],v:["think smart","يفكر بذكاء"],
+ t:["Lighting, climate, locks, video intercom and app control — one smart home.","إضاءة ومناخ وأقفال وإنتركم مرئي وتحكم بالتطبيق — منزل ذكي واحد."],
+ items:[["Smart lighting","إضاءة ذكية","Scenes, dimming and schedules.","مشاهد وتعتيم وجدولة."],["Climate control","تحكم بالمناخ","AC control from anywhere.","تحكم بالتكييف من أي مكان."],["Smart locks","أقفال ذكية","Keyless entry and access logs.","دخول بدون مفتاح وسجل دخول."],["Video intercom","إنتركم مرئي","See and talk to visitors.","شاهد وتحدث مع الزوار."],["App control","تحكم بالتطبيق","Everything in one app, 24/7.","كل شيء بتطبيق واحد على مدار الساعة."],["Integration","التكامل","Works with your other systems.","يتكامل مع أنظمتك الأخرى."]],
+ certs:["24/7 control","App based"]},
+{k:"security",c:"#dc2626",c2:"#fca5a5",ic:"◉",n:["Platinum Security System","بلاتينيوم للأنظمة الأمنية"],s:["Security","الأنظمة الأمنية"],v:["stay secure","يبقى آمناً"],
+ t:["CCTV with AI analytics, access control, attendance, turnstiles and X-ray screening.","كاميرات بتحليلات الذكاء الاصطناعي وتحكم بالدخول وحضور وانصراف وبوابات وأجهزة فحص."],
+ items:[["AI CCTV","كاميرات ذكية","140 dB Ultra WDR cameras with analytics.","كاميرات Ultra WDR بدقة 140 ديسيبل مع تحليلات."],["Access control","التحكم بالدخول","Cards, fingerprint and face.","بطاقات وبصمة ووجه."],["Time attendance","الحضور والانصراف","Accurate staff records.","سجلات دقيقة للموظفين."],["Turnstiles","البوابات الدوارة","Controlled entry for lobbies.","دخول منظم للردهات."],["X-ray screening","أجهزة الفحص","Baggage and parcel inspection.","فحص الحقائب والطرود."],["Intercom","الإنتركم","Audio and video entry systems.","أنظمة دخول صوتية ومرئية."]],
+ certs:["ONVIF","IP67 / IP68","Explosion-proof 304/316"]},
+{k:"fire",c:"#ea580c",c2:"#fdba74",ic:"▯",n:["Platinum Fire Door","بلاتينيوم للأبواب المقاومة للحريق"],s:["Fire Doors","أبواب الحريق"],v:["stay safe","يبقى محمياً"],
+ t:["Steel, wooden and glass fire-rated doors from 20 to 180 minutes.","أبواب حريق فولاذية وخشبية وزجاجية من 20 حتى 180 دقيقة."],
+ items:[["Steel fire doors","أبواب فولاذية","Up to 180-minute rating.","مقاومة حتى 180 دقيقة."],["Wooden fire doors","أبواب خشبية","Fire safety with a warm finish.","أمان من الحريق بلمسة دافئة."],["Glass fire doors","أبواب زجاجية","Rated glazing for open designs.","زجاج مقاوم للتصاميم المفتوحة."],["Emergency exits","أبواب الطوارئ","Panic bars and escape hardware.","مقابض ذعر وتجهيزات إخلاء."],["Civil-defence compliance","متطلبات الدفاع المدني","Documents for approvals.","مستندات للموافقات."],["Installation","التركيب","Fitted and tested by our team.","تركيب واختبار من فريقنا."]],
+ certs:["UL","NFPA","EN","BS","Intertek","SGS"]}];
+const STEPS=[["Consultation","الاستشارة","Free site visit and expert advice.","زيارة موقع مجانية ونصيحة الخبراء."],["Design & Selection","التصميم والاختيار","Specs and options for your budget.","مواصفات وخيارات تناسب ميزانيتك."],["Supply","التوريد","Certified global products.","منتجات عالمية معتمدة."],["Installation","التركيب","Install, test and commission.","تركيب واختبار وتشغيل."],["Maintenance","الصيانة","Preventive care and fast support.","صيانة وقائية ودعم سريع."]];
+const FAQ={elevators:[["Can I add an elevator to my existing villa?","هل يمكن تركيب مصعد في فيلا قائمة؟","Yes. Compact MRL home elevators need little space — we visit the villa for free and suggest the right model.","نعم. مصاعد MRL المنزلية تحتاج مساحة صغيرة — نزور الفيلا مجاناً ونقترح الطراز المناسب."]],
+hvac:[["Which HVAC systems do you offer?","ما أنظمة التكييف التي تقدمونها؟","VRF systems, chillers up to 600 TR, AHUs/FAHUs and ducted AC, with our partner Blue Star.","أنظمة VRF ومبردات حتى 600 طن تبريد ووحدات مناولة هواء وتكييف دكت مع شريكنا Blue Star."]],
+smart:[["Can I control my home from my phone?","هل أستطيع التحكم بمنزلي من الهاتف؟","Yes — lighting, climate, locks and intercom from one app, from anywhere.","نعم — الإضاءة والتكييف والأقفال والإنتركم من تطبيق واحد ومن أي مكان."]],
+security:[["Do your cameras work at night?","هل تعمل كاميراتكم ليلاً؟","Yes — our Ultra WDR cameras handle low light and strong backlight.","نعم — كاميرات Ultra WDR تعمل في الإضاءة المنخفضة والإضاءة الخلفية القوية."]],
+fire:[["What fire ratings do your doors have?","ما تصنيف مقاومة أبوابكم للحريق؟","From 20 up to 180 minutes, certified to UL / NFPA / EN / BS standards.","من 20 حتى 180 دقيقة، معتمدة وفق UL / NFPA / EN / BS."]]};
+const OFF=["Where are your offices?","أين تقع مكاتبكم؟","Abu Dhabi: 3 Sails Tower, Corniche Street. Dubai: Bayswater Tower, Business Bay.","أبوظبي: برج 3 Sails، شارع الكورنيش. دبي: برج Bayswater، الخليج التجاري."];
+const CAB=[["PL-01","linear-gradient(135deg,#d9dee6,#8d97a6)"],["PL-02","linear-gradient(135deg,#c89b5c,#6b4423)"],["PL-03","linear-gradient(135deg,#f5e6b8,#b8902f)"]];
+let L="en",cur=0,sel=new Set();
+const $=s=>document.querySelector(s),T=(en,ar)=>L==="ar"?ar:en;
+function note(t){const n=$("#note");n.textContent=t;n.classList.add("on");clearTimeout(n._t);n._t=setTimeout(()=>n.classList.remove("on"),1800)}
+function render(){
+ $("#chips").innerHTML=D.map((d,i)=>`<button class="chip" style="--c:${d.c}" data-div="${i}"><span>${d.ic}</span>${T(...d.s)}</button>`).join("");
+ $("#divs").innerHTML=D.map((d,i)=>`<button class="dc" style="--c:${d.c};--c2:${d.c2}" data-div="${i}"><span class="n">0${i+1}</span><span class="ic">${d.ic}</span><h3>${T(...d.n)}</h3><p>${T(...d.t)}</p><span class="go">${T("Explore →","اكتشف ←")}</span></button>`).join("");
+ const m=D.map(d=>`<span style="--c:${d.c}"><b style="color:${d.c}">${d.ic}</b>${T(...d.n)}</span>`).join("")+`<span>${T("Free consultation","استشارة مجانية")}</span><span>${T("Supply · Install · Maintain","توريد · تركيب · صيانة")}</span>`;
+ $("#marq").innerHTML=m+m;
+ $("#steps").innerHTML=STEPS.map((s,i)=>`<li><b>0${i+1}</b><h4>${T(s[0],s[1])}</h4><p>${T(s[2],s[3])}</p></li>`).join("");
+ $("#dpick").innerHTML=D.map((d,i)=>`<button type="button" style="--c:${d.c}" class="${sel.has(i)?"on":""}" data-pick="${i}">${d.ic} ${T(...d.s)}</button>`).join("");
+ $("#cab").innerHTML=CAB.map((c,i)=>`<button type="button" class="${i===0?"on":""}" style="--g:${c[1]}"><div class="sw"></div>${c[0]}</button>`).join("");
+ division(cur);
+ document.querySelectorAll("[data-en]").forEach(e=>{e.textContent=e.dataset[L]});
+ $("#lang").textContent=L==="ar"?"English":"العربية";
+ $("#qn").placeholder=T("Ahmed","أحمد");
+ sugg();
+}
+function division(i){cur=i;const d=D[i];const v=$("#v-division");v.style.setProperty("--dc",d.c);
+ $("#dhero").style.setProperty("--c",d.c);$("#dname").textContent=T(...d.n);$("#dtag").textContent=T(...d.t);
+ $("#dsw").innerHTML=D.map((o,j)=>`<button class="${j===i?"on":""}" style="--c:${o.c}" data-sw="${j}">${o.ic} ${T(...o.s)}</button>`).join("");
+ $("#items").innerHTML=d.items.map((it,j)=>`<div class="it" style="--c:${d.c}"><span>${String(j+1).padStart(2,"0")}</span><h3>${T(it[0],it[1])}</h3><p>${T(it[2],it[3])}</p></div>`).join("");
+ $("#certs").innerHTML=`<span style="background:${d.c};color:#fff;border-color:${d.c}">${T("Certifications & standards","الشهادات والمعايير")}</span>`+d.certs.map(c=>`<span>${c}</span>`).join("");
+ $("#faq").innerHTML=FAQ[d.k].concat([OFF]).map((f,j)=>`<details ${j===0?"open":""}><summary>${T(f[0],f[1])}</summary><p>${T(f[2],f[3])}</p></details>`).join("");}
+function show(v){document.querySelectorAll(".view").forEach(x=>x.classList.toggle("on",x.id==="v-"+v));
+ document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("on",b.dataset.view===v&&!b.dataset.scroll));
+ $("#site").scrollIntoView({behavior:"smooth",block:"start"});}
+let ri=0;function rot(){const d=D[ri%5],r=$("#rot");r.textContent=T(...d.v);r.style.setProperty("--c",d.c);
+ $("#pb").style.setProperty("--c",d.c);$("#pbn").textContent=["75+","600","24/7","140","180"][ri%5];
+ $("#pbl").textContent=T(...[["projects completed","مشروع منجز"],["TR chillers capacity","طن تبريد سعة المبردات"],["control from anywhere","تحكم من أي مكان"],["dB Ultra WDR cameras","ديسيبل كاميرات Ultra WDR"],["min fire rating","دقيقة مقاومة للحريق"]][ri%5]);ri++}
+/* chat */
+function addMsg(t,who){const b=$("#cbody"),m=document.createElement("div");m.className="msg "+who;m.innerHTML=t;b.appendChild(m);b.scrollTop=b.scrollHeight;return m}
+function ask(q,a){addMsg(q,"u");const t=addMsg('<span class="typing"><i></i><i></i><i></i></span>',"b");setTimeout(()=>{t.textContent=a;$("#cbody").scrollTop=1e5},900)}
+function sugg(){const qs=[FAQ.elevators[0],FAQ.hvac[0],FAQ.fire[0],OFF];
+ $("#sugg").innerHTML=qs.map((q,i)=>`<button data-q="${i}">${T(q[0],q[1])}</button>`).join("");
+ $("#sugg").querySelectorAll("button").forEach(b=>b.onclick=()=>{const q=qs[b.dataset.q];ask(T(q[0],q[1]),T(q[2],q[3]))});
+ if(!$("#cbody").children.length||$("#cbody").dataset.l!==L){$("#cbody").innerHTML="";$("#cbody").dataset.l=L;
+ addMsg(T("Hi! 👋 I’m the Platinum tech assistant. Ask me anything about our elevators, HVAC, smart homes, security systems or fire doors.","مرحباً! 👋 أنا المساعد التقني لبلاتينيوم. اسألني أي شيء عن المصاعد، التكييف، المنازل الذكية، الأنظمة الأمنية أو أبواب الحريق."),"b")}}
+function openChat(){$("#chat").classList.add("on")}
+document.addEventListener("click",e=>{
+ const v=e.target.closest("[data-view]");if(v){e.preventDefault();show(v.dataset.view);if(v.dataset.scroll)setTimeout(()=>document.getElementById(v.dataset.scroll).scrollIntoView({behavior:"smooth"}),300)}
+ const dv=e.target.closest("[data-div]");if(dv){division(+dv.dataset.div);show("division")}
+ const sw=e.target.closest("[data-sw]");if(sw)division(+sw.dataset.sw);
+ const pk=e.target.closest("[data-pick]");if(pk){const i=+pk.dataset.pick;sel.has(i)?sel.delete(i):sel.add(i);pk.classList.toggle("on");$("#cabin").classList.toggle("on",sel.has(0))}
+ const cb=e.target.closest(".cab button");if(cb){document.querySelectorAll(".cab button").forEach(x=>x.classList.toggle("on",x===cb))}
+ const dm=e.target.closest("[data-demo]");if(dm){e.preventDefault();note(T("Opens "+dm.dataset.demo+" on the live site","يفتح "+dm.dataset.demo+" في الموقع الفعلي"))}
+ const g=e.target.closest("[data-go]");if(g){e.preventDefault();const k=g.dataset.go;
+  if(k==="lang"){$("#lang").click();$("#site").scrollIntoView({behavior:"smooth"})}
+  if(k==="div"){division(0);show("division")} if(k==="quote"){show("quote");if(!sel.has(0)){sel.add(0);render();$("#cabin").classList.add("on")}}
+  if(k==="chat"){show("home");openChat()} if(k==="contact")show("contact")}
+});
+$("#lang").onclick=()=>{L=L==="en"?"ar":"en";document.documentElement.lang=L;$("#site").dir=L==="ar"?"rtl":"ltr";document.documentElement.dir=L==="ar"?"rtl":"ltr";render();ri--;rot()};
+$("#qsend").onclick=()=>{if(!$("#qn").value.trim()){$("#qn").focus();$("#qn").style.borderColor="#dc2626";return}$("#qfields").style.display="none";$("#sent").classList.add("on")};
+$("#qagain").onclick=()=>{$("#qfields").style.display="";$("#sent").classList.remove("on")};
+$("#botbtn").onclick=()=>$("#chat").classList.toggle("on");$("#chatx").onclick=()=>$("#chat").classList.remove("on");
+render();rot();setInterval(rot,2600);
+</script>
+</body>
+</html>
