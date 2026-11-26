@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-server-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06142b">
+<script>
+(function(){try{var q=new URLSearchParams(location.search).get('lang');var l=q||localStorage.getItem('pis-lang');if(q)localStorage.setItem('pis-lang',q);if(l==='ar'||l==='en'){var h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';}}catch(e){}})();
+</script>
+<title>Platinum Smart Homes | Platinum demo — by Mahmoud Adnan Ahmad</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demo.css">
+<link rel="icon" href="assets/img/logo-mark.png">
+</head>
+<body class="page is-division page-template-template-division pis-demo">
+<a class="skip-link" href="#content"><span data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">Skip to content</span></a>
+
+<div class="topbar">
+	<div class="container topbar-inner">
+		<div class="topbar-links">
+			<a href="tel:+971505030272" dir="ltr"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6.5 6.5l1.5-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.5 1.5C10.6 20.5 3.5 13.4 3.5 5A1.5 1.5 0 0 1 5 3.5z"/></svg>+971 50 503 0272</a>
+			<a href="mailto:Info@platinumelevatorae.com" class="hide-sm"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Info@platinumelevatorae.com</a>
+			<span class="hide-sm"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ar="أبوظبي · دبي" data-en="Abu Dhabi · Dubai">Abu Dhabi · Dubai</span></span>
+		</div>
+		<div class="topbar-links">
+			<a href="https://wa.me/971505030272" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg>WhatsApp</a>
+		</div>
+	</div>
+</div>
+
+<header class="site-header" id="siteHeader">
+	<div class="container header-inner">
+		<a href="index.html" class="brand" aria-label="Platinum Integrated Solutions">
+			<img src="./assets/img/logo-mark.png" alt="" class="brand-mark" width="46" height="44"><span class="brand-text"><strong>PLATINUM</strong><small>INTEGRATED SOLUTIONS</small></span>		</a>
+
+		<nav class="main-nav" id="mainNav" aria-label="Main">
+			<ul class="menu"><li><a href="index.html"><span data-ar="الرئيسية" data-en="Home">Home</span></a></li><li class="has-sub"><a href="index.html#divisions"><span data-ar="أقسامنا" data-en="Divisions">Divisions</span> <i class="caret"></i></a><ul class="sub-menu"><li><a href="elevators.html" style="--c:#2F6BFF"><span class="dot"></span><span data-ar="بلاتينيوم للمصاعد" data-en="Platinum Elevator">Platinum Elevator</span></a></li><li><a href="hvac.html" style="--c:#00B4D8"><span class="dot"></span><span data-ar="بلاتينيوم للتكييف" data-en="Platinum HVAC">Platinum HVAC</span></a></li><li><a href="smart-homes.html" style="--c:#8B5CF6"><span class="dot"></span><span data-ar="بلاتينيوم للمنازل الذكية" data-en="Platinum Smart Homes">Platinum Smart Homes</span></a></li><li><a href="security-systems.html" style="--c:#F59E0B"><span class="dot"></span><span data-ar="بلاتينيوم للأنظمة الأمنية" data-en="Platinum Security System">Platinum Security System</span></a></li><li><a href="fire-doors.html" style="--c:#EF4444"><span class="dot"></span><span data-ar="بلاتينيوم للأبواب المقاومة للحريق" data-en="Platinum Fire Door">Platinum Fire Door</span></a></li></ul></li><li><a href="about.html"><span data-ar="من نحن" data-en="About Us">About Us</span></a></li><li><a href="index.html#projects"><span data-ar="مشاريعنا" data-en="Projects">Projects</span></a></li><li><a href="news.html"><span data-ar="الأخبار" data-en="News">News</span></a></li><li><a href="contact.html"><span data-ar="تواصل معنا" data-en="Contact">Contact</span></a></li></ul>			<a href="request-a-quote.html" class="btn btn-primary nav-quote"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+		</nav>
+
+		<div class="header-actions">
+			<button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / تغيير اللغة"><span class="lt-en">العربية</span><span class="lt-ar">English</span></button>
+			<a href="request-a-quote.html" class="btn btn-primary btn-sm header-quote"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+			<button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+		</div>
+	</div>
+</header>
+
+<main id="content" class="site-main">
+
+<section class="div-hero" style="--c:#8B5CF6;--c2:#C4B5FD">
+	<div class="dh-bg" style="background-image:url('./assets/img/div-smart.webp');background-position:50% 50%"></div>
+	<div class="dh-tint" aria-hidden="true"></div>
+	<div class="container dh-inner">
+		<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html"><span data-ar="الرئيسية" data-en="Home">Home</span></a><span>/</span><a href="index.html#divisions"><span data-ar="أقسامنا" data-en="Divisions">Divisions</span></a></nav>
+		<span class="dh-icon"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h13V9.5"/><path d="M9.2 14.2a4 4 0 0 1 5.6 0M10.8 16.2a1.7 1.7 0 0 1 2.4 0"/></svg></span>
+		<h1><span data-ar="بلاتينيوم للمنازل الذكية" data-en="Platinum Smart Homes">Platinum Smart Homes</span></h1>
+		<p class="dh-tag"><span data-ar="الراحة والكفاءة والتحكم — بلمسة أو بكلمة." data-en="Comfort, efficiency and control — at a touch or a word.">Comfort, efficiency and control — at a touch or a word.</span></p>
+		<div class="hx-cta">
+			<a href="request-a-quote.html?division=smart-homes" class="btn btn-light btn-lg btn-shine"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+			<a href="https://wa.me/971505030272?text=Hello%20Platinum%2C%20I%20am%20interested%20in%20Platinum%20Smart%20Homes" class="btn btn-ghost btn-lg" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg><span data-ar="واتساب" data-en="WhatsApp">WhatsApp</span></a>
+		</div>
+	</div>
+	<div class="div-switch">
+		<div class="container ds-inner">
+							<a href="elevators.html" class="" style="--c:#2F6BFF"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="2.5" width="14" height="19" rx="1.5"/><path d="M12 2.5v19M7.8 9.2 9.3 7l1.5 2.2M16.2 14.8 14.7 17l-1.5-2.2"/></svg><span><span data-ar="المصاعد" data-en="Elevators">Elevators</span></span></a>
+							<a href="hvac.html" class="" style="--c:#00B4D8"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="1.6"/><path d="M12 10.4c-.5-2.6.2-4.6 2.4-5.2 1.6.9 1.4 3.4-2.4 5.2zM13.4 12.8c2.5.9 3.8 2.6 3.2 4.8-1.8.4-3.4-1.5-3.2-4.8zM10.6 12.8c-2 1.7-4.1 2-5.6.3.4-1.8 2.9-2.4 5.6-.3z"/></svg><span><span data-ar="التكييف" data-en="HVAC">HVAC</span></span></a>
+							<a href="smart-homes.html" class="is-current" style="--c:#8B5CF6"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h13V9.5"/><path d="M9.2 14.2a4 4 0 0 1 5.6 0M10.8 16.2a1.7 1.7 0 0 1 2.4 0"/></svg><span><span data-ar="المنازل الذكية" data-en="Smart Homes">Smart Homes</span></span></a>
+							<a href="security-systems.html" class="" style="--c:#F59E0B"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5 4.5 5.5v6c0 4.6 3.2 8.4 7.5 10 4.3-1.6 7.5-5.4 7.5-10v-6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10.2 11V9.6a1.8 1.8 0 0 1 3.6 0V11"/></svg><span><span data-ar="الأنظمة الأمنية" data-en="Security">Security</span></span></a>
+							<a href="fire-doors.html" class="" style="--c:#EF4444"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.5c-3.9 0-6.5-2.6-6.5-6.2 0-3.8 3-5.6 3.6-9.8 2.2 1.4 3.4 3.4 3.5 5.6 1-.8 1.6-2 1.7-3.3 2.4 1.9 4.2 4.4 4.2 7.5 0 3.6-2.6 6.2-6.5 6.2z"/><path d="M12 21.5c-1.7 0-2.8-1.1-2.8-2.7 0-1.8 1.5-2.6 2.1-4.3 1.9 1.1 3.5 2.5 3.5 4.3 0 1.6-1.1 2.7-2.8 2.7z"/></svg><span><span data-ar="أبواب الحريق" data-en="Fire Doors">Fire Doors</span></span></a>
+					</div>
+	</div>
+</section>
+
+<div style="--c:#8B5CF6;--c2:#C4B5FD">
+
+	<section class="section div-intro">
+		<div class="container intro-grid">
+			<div class="reveal">
+				<p class="eyebrow colored"><span data-ar="من نحن" data-en="Who we are">Who we are</span></p>
+				<h2><span data-ar="أنظمة التحكم والأتمتة الذكية للمنازل والمباني — الإضاءة، المناخ، الدخول والمزيد." data-en="Smart control and automation for homes and buildings — lighting, climate, access and more.">Smart control and automation for homes and buildings — lighting, climate, access and more.</span></h2>
+			</div>
+			<div class="reveal">
+				<p class="lead"><span data-ar="تقدم بلاتينيوم للمنازل الذكية أنظمة التحكم والأتمتة الذكية للمنازل والمباني — تجمع الراحة والكفاءة والأمان في نظام واحد سهل الاستخدام يعمل بتناغم مع المصعد والتكييف والأنظمة الأمنية." data-en="Platinum Smart Homes delivers smart control and automation systems for homes and buildings — bringing comfort, efficiency and security together in one easy-to-use system that works seamlessly with your elevator, HVAC and security systems.">Platinum Smart Homes delivers smart control and automation systems for homes and buildings — bringing comfort, efficiency and security together in one easy-to-use system that works seamlessly with your elevator, HVAC and security systems.</span></p>
+							</div>
+		</div>
+	</section>
+
+	<section class="section div-items">
+		<div class="container">
+			<div class="section-head">
+				<p class="eyebrow colored"><span data-ar="الحلول والمنتجات" data-en="Solutions &amp; Products">Solutions & Products</span></p>
+				<h2><span data-ar="ماذا نقدم" data-en="What we deliver">What we deliver</span></h2>
+			</div>
+			<div class="item-grid">
+									<div class="item-card reveal">
+						<span class="item-n">01</span>
+						<h3><span data-ar="الإضاءة والمشاهد" data-en="Lighting &amp; scenes">Lighting & scenes</span></h3>
+						<p><span data-ar="إضاءة مؤتمتة ومشاهد وجداول زمنية." data-en="Automated lighting, moods and schedules.">Automated lighting, moods and schedules.</span></p>
+					</div>
+									<div class="item-card reveal">
+						<span class="item-n">02</span>
+						<h3><span data-ar="التحكم بالمناخ" data-en="Climate control">Climate control</span></h3>
+						<p><span data-ar="منظمات حرارة ذكية متكاملة مع نظام التكييف." data-en="Smart thermostats integrated with your HVAC system.">Smart thermostats integrated with your HVAC system.</span></p>
+					</div>
+									<div class="item-card reveal">
+						<span class="item-n">03</span>
+						<h3><span data-ar="الأمان الذكي" data-en="Smart security">Smart security</span></h3>
+						<p><span data-ar="كاميرات Wi-Fi / IoT، أقفال ذكية وإنتركم مرئي." data-en="Wi-Fi / IoT cameras, smart locks and video intercoms.">Wi-Fi / IoT cameras, smart locks and video intercoms.</span></p>
+					</div>
+									<div class="item-card reveal">
+						<span class="item-n">04</span>
+						<h3><span data-ar="التحكم بالتطبيق والصوت" data-en="App &amp; voice control">App & voice control</span></h3>
+						<p><span data-ar="أدر منزلك من أي مكان." data-en="Manage your home from anywhere.">Manage your home from anywhere.</span></p>
+					</div>
+									<div class="item-card reveal">
+						<span class="item-n">05</span>
+						<h3><span data-ar="أتمتة المباني" data-en="Building automation">Building automation</span></h3>
+						<p><span data-ar="تحكم مركزي للفلل والمباني السكنية والتجارية." data-en="Centralized control for villas, residential and commercial buildings.">Centralized control for villas, residential and commercial buildings.</span></p>
+					</div>
+									<div class="item-card reveal">
+						<span class="item-n">06</span>
+						<h3><span data-ar="التكامل" data-en="Integration">Integration</span></h3>
+						<p><span data-ar="نظام واحد يربط المصاعد والتكييف والأنظمة الأمنية." data-en="One system that ties in elevators, HVAC and security.">One system that ties in elevators, HVAC and security.</span></p>
+					</div>
+							</div>
+		</div>
+	</section>
+
+	
+	
+	
+	<section class="section areas-x" id="service-areas" style="--c:#8B5CF6">
+	<div class="container">
+		<div class="section-head center">
+			<p class="eyebrow"><span data-ar="مناطق الخدمة" data-en="Service Areas">Service Areas</span></p>
+			<h2>
+				<span data-ar="شركة منازل ذكية وأتمتة في جميع أنحاء الإمارات — أبوظبي، دبي، الشارقة وكل الإمارات" data-en="Smart Home Automation Company across the UAE — Abu Dhabi, Dubai, Sharjah &amp; all emirates">Smart Home Automation Company across the UAE — Abu Dhabi, Dubai, Sharjah & all emirates</span>			</h2>
+			<p class="section-lead">
+				<span data-ar="بمكتبينا في أبوظبي ودبي، تصل فرقنا إلى كل الإمارات للمعاينة والتركيب والصيانة السريعة — أينما كان مشروعك، هناك فريق من بلاتينيوم قريب منك." data-en="With offices in Abu Dhabi and Dubai, our teams reach every emirate for site visits, installation and fast maintenance — wherever your project is, there is a Platinum team near you.">With offices in Abu Dhabi and Dubai, our teams reach every emirate for site visits, installation and fast maintenance — wherever your project is, there is a Platinum team near you.</span>			</p>
+		</div>
+		<ul class="area-grid">
+							<li class="area-card has-office">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="أبوظبي" data-en="Abu Dhabi">Abu Dhabi</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في أبوظبي" data-en="Smart home company in Abu Dhabi">Smart home company in Abu Dhabi</span>					</p>
+											<span class="area-office"><span data-ar="مكتب" data-en="Office">Office</span></span>
+									</li>
+							<li class="area-card has-office">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="دبي" data-en="Dubai">Dubai</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في دبي" data-en="Smart home company in Dubai">Smart home company in Dubai</span>					</p>
+											<span class="area-office"><span data-ar="مكتب" data-en="Office">Office</span></span>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="الشارقة" data-en="Sharjah">Sharjah</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في الشارقة" data-en="Smart home company in Sharjah">Smart home company in Sharjah</span>					</p>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="العين" data-en="Al Ain">Al Ain</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في العين" data-en="Smart home company in Al Ain">Smart home company in Al Ain</span>					</p>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="عجمان" data-en="Ajman">Ajman</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في عجمان" data-en="Smart home company in Ajman">Smart home company in Ajman</span>					</p>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="رأس الخيمة" data-en="Ras Al Khaimah">Ras Al Khaimah</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في رأس الخيمة" data-en="Smart home company in Ras Al Khaimah">Smart home company in Ras Al Khaimah</span>					</p>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="الفجيرة" data-en="Fujairah">Fujairah</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في الفجيرة" data-en="Smart home company in Fujairah">Smart home company in Fujairah</span>					</p>
+									</li>
+							<li class="area-card">
+					<span class="area-pin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3><span data-ar="أم القيوين" data-en="Umm Al Quwain">Umm Al Quwain</span></h3>
+					<p>
+						<span data-ar="شركة منازل ذكية في أم القيوين" data-en="Smart home company in Umm Al Quwain">Smart home company in Umm Al Quwain</span>					</p>
+									</li>
+					</ul>
+		<div class="hx-cta center">
+			<a href="request-a-quote.html?division=smart-homes" class="btn btn-primary"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب معاينة مجانية" data-en="Request a free site visit">Request a free site visit</span></a>
+			<a href="tel:+971505030272" class="btn btn-outline"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6.5 6.5l1.5-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.5 1.5C10.6 20.5 3.5 13.4 3.5 5A1.5 1.5 0 0 1 5 3.5z"/></svg><span dir="ltr">+971 50 503 0272</span></a>
+		</div>
+	</div>
+</section>
+
+			<section class="section div-faq">
+			<div class="container faq-grid">
+				<div>
+					<p class="eyebrow colored"><span data-ar="أسئلة شائعة" data-en="FAQ">FAQ</span></p>
+					<h2><span data-ar="أسئلة تصلنا كثيراً" data-en="Questions we often get">Questions we often get</span></h2>
+					<p class="muted"><span data-ar="لم تجد إجابتك؟ اسأل مساعدنا التقني أو راسلنا على واتساب." data-en="Can’t find your answer? Ask our Tech Assistant or message us on WhatsApp.">Can’t find your answer? Ask our Tech Assistant or message us on WhatsApp.</span></p>
+					<button type="button" class="btn btn-outline" data-open-chat><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="7.5" width="15" height="11" rx="3"/><path d="M12 4v3.5M9 12.5h.01M15 12.5h.01" stroke-width="2"/><path d="M9.5 15.5h5M2.5 12v2.5M21.5 12v2.5"/></svg><span data-ar="اسأل المساعد التقني" data-en="Ask the Tech Assistant">Ask the Tech Assistant</span></button>
+				</div>
+				<div class="faq-list">
+											<details class="faq reveal">
+							<summary><span data-ar="هل يمكن إضافة نظام المنزل الذكي لفيلا قائمة؟" data-en="Can smart home systems be added to an existing villa?">Can smart home systems be added to an existing villa?</span></summary>
+							<p><span data-ar="نعم. تواصل معنا لاستشارة مجانية وسنقترح النظام المناسب لمنزلك." data-en="Yes. Contact us for a free consultation and we will recommend the right system for your home.">Yes. Contact us for a free consultation and we will recommend the right system for your home.</span></p>
+						</details>
+									</div>
+			</div>
+		</section>
+	
+	<section class="section div-quote">
+		<div class="container quote-grid">
+			<div class="quote-side">
+				<p class="eyebrow colored"><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></p>
+				<h2><span data-ar="أخبرنا عن مشروعك" data-en="Tell us about your project">Tell us about your project</span></h2>
+				<p class="muted"><span data-ar="سيتواصل معك متخصصونا بالخيارات المناسبة واستشارة مجانية." data-en="Our specialists will get back to you with options and a free consultation.">Our specialists will get back to you with options and a free consultation.</span></p>
+				<ul class="ticks">
+					<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-ar="زيارة موقع واستشارة مجانية" data-en="Free site visit &amp; consultation">Free site visit & consultation</span></li>
+					<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-ar="منتجات عالمية معتمدة" data-en="Certified international products">Certified international products</span></li>
+					<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-ar="تركيب وصيانة من فريق واحد" data-en="Installation and maintenance by one team">Installation and maintenance by one team</span></li>
+				</ul>
+			</div>
+			<form class="quote-form" id="quote-form" method="post" action="#">
+	
+	<input type="hidden" name="action" value="pis_quote">
+	<input type="hidden" name="pis_nonce" value="demo">	<input type="hidden" name="form_lang" value="en">
+	<div class="hp" aria-hidden="true"><label>Website<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+
+	<p class="form-label-title"><span data-ar="ما الأقسام التي تحتاجها؟ (اختر قسماً أو أكثر)" data-en="Which divisions do you need? (choose one or more)">Which divisions do you need? (choose one or more)</span></p>
+	<div class="div-pick">
+					<label class="pick" style="--c:#2F6BFF">
+				<input type="checkbox" name="division[]" value="Platinum Elevator" data-key="elevator" >
+				<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="2.5" width="14" height="19" rx="1.5"/><path d="M12 2.5v19M7.8 9.2 9.3 7l1.5 2.2M16.2 14.8 14.7 17l-1.5-2.2"/></svg><span data-ar="المصاعد" data-en="Elevators">Elevators</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+			</label>
+					<label class="pick" style="--c:#00B4D8">
+				<input type="checkbox" name="division[]" value="Platinum HVAC" data-key="hvac" >
+				<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="1.6"/><path d="M12 10.4c-.5-2.6.2-4.6 2.4-5.2 1.6.9 1.4 3.4-2.4 5.2zM13.4 12.8c2.5.9 3.8 2.6 3.2 4.8-1.8.4-3.4-1.5-3.2-4.8zM10.6 12.8c-2 1.7-4.1 2-5.6.3.4-1.8 2.9-2.4 5.6-.3z"/></svg><span data-ar="التكييف" data-en="HVAC">HVAC</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+			</label>
+					<label class="pick" style="--c:#8B5CF6">
+				<input type="checkbox" name="division[]" value="Platinum Smart Homes" data-key="smart"  checked="checked">
+				<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h13V9.5"/><path d="M9.2 14.2a4 4 0 0 1 5.6 0M10.8 16.2a1.7 1.7 0 0 1 2.4 0"/></svg><span data-ar="المنازل الذكية" data-en="Smart Homes">Smart Homes</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+			</label>
+					<label class="pick" style="--c:#F59E0B">
+				<input type="checkbox" name="division[]" value="Platinum Security System" data-key="security" >
+				<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5 4.5 5.5v6c0 4.6 3.2 8.4 7.5 10 4.3-1.6 7.5-5.4 7.5-10v-6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10.2 11V9.6a1.8 1.8 0 0 1 3.6 0V11"/></svg><span data-ar="الأنظمة الأمنية" data-en="Security">Security</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+			</label>
+					<label class="pick" style="--c:#EF4444">
+				<input type="checkbox" name="division[]" value="Platinum Fire Door" data-key="fire" >
+				<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.5c-3.9 0-6.5-2.6-6.5-6.2 0-3.8 3-5.6 3.6-9.8 2.2 1.4 3.4 3.4 3.5 5.6 1-.8 1.6-2 1.7-3.3 2.4 1.9 4.2 4.4 4.2 7.5 0 3.6-2.6 6.2-6.5 6.2z"/><path d="M12 21.5c-1.7 0-2.8-1.1-2.8-2.7 0-1.8 1.5-2.6 2.1-4.3 1.9 1.1 3.5 2.5 3.5 4.3 0 1.6-1.1 2.7-2.8 2.7z"/></svg><span data-ar="أبواب الحريق" data-en="Fire Doors">Fire Doors</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+			</label>
+				<label class="pick" style="--c:#1170E8">
+			<input type="checkbox" name="division[]" value="Full project (all divisions)" data-key="all" >
+			<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h13V9.5M10 20v-5h4v5"/></svg><span data-ar="مشروع متكامل" data-en="Full project">Full project</span><i class="pick-tick"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i></span>
+		</label>
+	</div>
+
+		<div class="cabin-pick" id="cabinPick" hidden>
+		<p class="form-label-title"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="2.5" width="14" height="19" rx="1.5"/><path d="M12 2.5v19M7.8 9.2 9.3 7l1.5 2.2M16.2 14.8 14.7 17l-1.5-2.2"/></svg><span data-ar="تصميم كابينة المصعد — اختر الموديل ثم اختر الخامة لكل جزء" data-en="Elevator cabin design — choose a model, then pick the finish for each part">Elevator cabin design — choose a model, then pick the finish for each part</span></p>
+					<div class="cabin-model" data-model="XTQ01-2311">
+				<div class="cabin-media">
+											<button type="button" class="cabin-photo cert-thumb" style="aspect-ratio:544/822" data-full="./assets/img/cabin-xtq01-views.webp" aria-label="View all angles">
+							<img src="./assets/img/cabin-xtq01-main.webp" alt="Elevator cabin XTQ01-2311" loading="lazy" width="544" height="822">
+															<svg class="cabin-map" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+									<defs>
+																																	<pattern id="pat-xtq01-2311-ceiling-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-mirror-ss.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq01-2311-side_wall-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-coffee-metal.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq01-2311-rear_wall-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-coffee-metal.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																							<pattern id="pat-xtq01-2311-rear_wall-1" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-platinum-stone.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq01-2311-floor-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-jazz-white.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq01-2311-handrail-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-none.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq01-2311-cop-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/cop-xcp2-a3.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																														</defs>
+																			<g class="zone" data-part="ceiling" data-in-photo="0">
+											<polygon class="hl" points="0,0 100,0 80,20.5 20,20.5"/>										</g>
+																			<g class="zone" data-part="side_wall" data-in-photo="0">
+											<polygon class="hl" points="0,0 20,20.5 20,79 0,99"/><polygon class="hl" points="100,0 80,20.5 80,79 100,99"/>										</g>
+																			<g class="zone" data-part="rear_wall" data-in-photo="1">
+											<g class="tex" data-idx="0"><polygon points="34,20.5 66,20.5 66,79 34,79" fill="url(#pat-xtq01-2311-rear_wall-0)"/></g><polygon class="hl" points="20,20.5 80,20.5 80,79 20,79"/>										</g>
+																			<g class="zone" data-part="floor" data-in-photo="0">
+											<polygon class="hl" points="20,79 80,79 100,100 0,100"/>										</g>
+																			<g class="zone" data-part="handrail" data-in-photo="0">
+											<polygon class="hl" points="20,54 80,54 80,57 20,57"/>										</g>
+																			<g class="zone" data-part="cop" data-in-photo="0">
+																					</g>
+																	</svg>
+								<span class="cabin-tag" aria-live="polite"></span>
+														<span class="cp-zoom"><span data-ar="عرض كل الزوايا" data-en="View all angles">View all angles</span></span>
+						</button>
+									</div>
+
+				<div class="cabin-info">
+					<div class="cabin-head">
+						<strong class="cabin-code">XTQ01-2311</strong>
+						<span class="cabin-chosen"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-ar="تم الاختيار" data-en="Selected">Selected</span></span>
+					</div>
+					<span class="cabin-sub"><span data-ar="الأنماط المقترحة" data-en="Recommended schemes">Recommended schemes</span></span>
+					<div class="scheme-row">
+													<label class="scheme">
+								<input type="radio" name="cabin_design" value="XTQ01-2311 – A Platinum">
+								<span><i class="sw" style="background:linear-gradient(135deg,#8a7a66,#f1eee8 60%,#d9b46a)"></i><b>A</b><span data-ar="بلاتينيوم" data-en="Platinum">Platinum</span></span>
+							</label>
+													<label class="scheme">
+								<input type="radio" name="cabin_design" value="XTQ01-2311 – B Pandora">
+								<span><i class="sw" style="background:linear-gradient(135deg,#3a3a40,#9a9aa3)"></i><b>B</b><span data-ar="باندورا" data-en="Pandora">Pandora</span></span>
+							</label>
+													<label class="scheme">
+								<input type="radio" name="cabin_design" value="XTQ01-2311 – C Light Platinum">
+								<span><i class="sw" style="background:linear-gradient(135deg,#d8d3cb,#fbfaf7)"></i><b>C</b><span data-ar="بلاتينيوم فاتح" data-en="Light Platinum">Light Platinum</span></span>
+							</label>
+											</div>
+
+					<div class="part-list">
+																				<div class="part-row" data-part="ceiling" data-label-en="Ceiling" data-label-ar="السقف">
+								<span class="part-name"><span data-ar="السقف" data-en="Ceiling">Ceiling</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][ceiling]" value="Mirror stainless steel" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-mirror-ss.webp" alt="" loading="lazy">
+												<em><span data-ar="ستانلس ستيل مرآة" data-en="Mirror stainless steel">Mirror stainless steel</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="side_wall" data-label-en="Side wall" data-label-ar="الجدار الجانبي">
+								<span class="part-name"><span data-ar="الجدار الجانبي" data-en="Side wall">Side wall</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][side_wall]" value="Coffee brushed metal panel" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-coffee-metal.webp" alt="" loading="lazy">
+												<em><span data-ar="لوح معدني مصقول بلون القهوة" data-en="Coffee brushed metal panel">Coffee brushed metal panel</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="rear_wall" data-label-en="Rear wall" data-label-ar="الجدار الخلفي">
+								<span class="part-name"><span data-ar="الجدار الخلفي" data-en="Rear wall">Rear wall</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][rear_wall]" value="Coffee brushed metal panel" data-idx="0" >
+											<span>
+												<img src="./assets/img/mat-coffee-metal.webp" alt="" loading="lazy">
+												<em><span data-ar="لوح معدني مصقول بلون القهوة" data-en="Coffee brushed metal panel">Coffee brushed metal panel</span></em>
+											</span>
+										</label>
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][rear_wall]" value="Platinum stone-crystal panel" data-idx="1"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-platinum-stone.webp" alt="" loading="lazy">
+												<em><span data-ar="لوح حجر كريستالي بلاتينيوم" data-en="Platinum stone-crystal panel">Platinum stone-crystal panel</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="floor" data-label-en="Floor" data-label-ar="الأرضية">
+								<span class="part-name"><span data-ar="الأرضية" data-en="Floor">Floor</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][floor]" value="Jazz White marble-pattern resin" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-jazz-white.webp" alt="" loading="lazy">
+												<em><span data-ar="ريزن بنقشة رخام أبيض Jazz" data-en="Jazz White marble-pattern resin">Jazz White marble-pattern resin</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="handrail" data-label-en="Handrail" data-label-ar="الدرابزين">
+								<span class="part-name"><span data-ar="الدرابزين" data-en="Handrail">Handrail</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ01-2311][handrail]" value="None" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-none.webp" alt="" loading="lazy">
+												<em><span data-ar="بدون" data-en="None">None</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="cop" data-label-en="Control panel (COP) · On the front wall — see all angles" data-label-ar="لوحة التحكم · على الجدار الأمامي — شاهد كل الزوايا">
+								<span class="part-name"><span data-ar="لوحة التحكم" data-en="Control panel (COP)">Control panel (COP)</span></span>
+								<div class="part-options">
+																			<label class="mat mat-cop">
+											<input type="radio" name="cabin_part[XTQ01-2311][cop]" value="XCP2-A3 (integrated)" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/cop-xcp2-a3.webp" alt="" loading="lazy">
+												<em><span data-ar="XCP2-A3 (مدمجة)" data-en="XCP2-A3 (integrated)">XCP2-A3 (integrated)</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+											</div>
+
+											<p class="cabin-note"><span data-ar="الجدار الأمامي: لوح معدني مصقول بلون القهوة" data-en="Front wall: Coffee brushed metal panel">Front wall: Coffee brushed metal panel</span></p>
+									</div>
+			</div>
+					<div class="cabin-model" data-model="XTQ02-2312">
+				<div class="cabin-media">
+											<button type="button" class="cabin-photo cert-thumb" style="aspect-ratio:442/890" data-full="./assets/img/cabin-xtq02-views.webp" aria-label="View all angles">
+							<img src="./assets/img/cabin-xtq02-main.webp" alt="Elevator cabin XTQ02-2312" loading="lazy" width="442" height="890">
+															<svg class="cabin-map" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+									<defs>
+																																	<pattern id="pat-xtq02-2312-ceiling-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-starry-sky.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq02-2312-side_wall-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-apple-sand.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																							<pattern id="pat-xtq02-2312-side_wall-1" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-matte-black-glass.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq02-2312-rear_wall-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-matte-black-glass.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																							<pattern id="pat-xtq02-2312-rear_wall-1" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-warm-white-glass.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq02-2312-floor-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-lightning-beige.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq02-2312-handrail-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/mat-apple-sand.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																																												<pattern id="pat-xtq02-2312-cop-0" patternUnits="userSpaceOnUse" width="34" height="11"><image href="./assets/img/cop-xcp33-a.webp" width="34" height="11" preserveAspectRatio="xMidYMid slice"/></pattern>
+																														</defs>
+																			<g class="zone" data-part="ceiling" data-in-photo="0">
+											<polygon class="hl" points="0,0 100,0 77,21 20,21"/>										</g>
+																			<g class="zone" data-part="side_wall" data-in-photo="0">
+											<g class="tex" data-idx="1"><polygon points="0,0 20,21 20,77 0,98" fill="url(#pat-xtq02-2312-side_wall-1)"/><polygon points="100,0 77,21 77,77 100,98" fill="url(#pat-xtq02-2312-side_wall-1)"/></g><polygon class="hl" points="0,0 20,21 20,77 0,98"/><polygon class="hl" points="100,0 77,21 77,77 100,98"/>										</g>
+																			<g class="zone" data-part="rear_wall" data-in-photo="1">
+											<g class="tex" data-idx="0"><polygon points="20,21 77,21 77,77 20,77" fill="url(#pat-xtq02-2312-rear_wall-0)"/></g><polygon class="hl" points="20,21 77,21 77,77 20,77"/>										</g>
+																			<g class="zone" data-part="floor" data-in-photo="0">
+											<polygon class="hl" points="20,77 77,77 100,100 0,100"/>										</g>
+																			<g class="zone" data-part="handrail" data-in-photo="0">
+											<polygon class="hl" points="27,52.8 72,52.8 72,55.8 27,55.8"/>										</g>
+																			<g class="zone" data-part="cop" data-in-photo="0">
+											<polygon class="hl" points="11,43 17,43 17,53 11,53"/>										</g>
+																	</svg>
+								<span class="cabin-tag" aria-live="polite"></span>
+														<span class="cp-zoom"><span data-ar="عرض كل الزوايا" data-en="View all angles">View all angles</span></span>
+						</button>
+									</div>
+
+				<div class="cabin-info">
+					<div class="cabin-head">
+						<strong class="cabin-code">XTQ02-2312</strong>
+						<span class="cabin-chosen"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-ar="تم الاختيار" data-en="Selected">Selected</span></span>
+					</div>
+					<span class="cabin-sub"><span data-ar="الأنماط المقترحة" data-en="Recommended schemes">Recommended schemes</span></span>
+					<div class="scheme-row">
+													<label class="scheme">
+								<input type="radio" name="cabin_design" value="XTQ02-2312 – A Standard">
+								<span><i class="sw" style="background:linear-gradient(135deg,#111 0 45%,#e9e4da 45%)"></i><b>A</b><span data-ar="ستاندرد" data-en="Standard">Standard</span></span>
+							</label>
+											</div>
+
+					<div class="part-list">
+																				<div class="part-row" data-part="ceiling" data-label-en="Ceiling" data-label-ar="السقف">
+								<span class="part-name"><span data-ar="السقف" data-en="Ceiling">Ceiling</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][ceiling]" value="Starry-sky ceiling" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-starry-sky.webp" alt="" loading="lazy">
+												<em><span data-ar="سقف سماء مرصّعة بالنجوم" data-en="Starry-sky ceiling">Starry-sky ceiling</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="side_wall" data-label-en="Side wall" data-label-ar="الجدار الجانبي">
+								<span class="part-name"><span data-ar="الجدار الجانبي" data-en="Side wall">Side wall</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][side_wall]" value="Apple-sand stainless steel" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-apple-sand.webp" alt="" loading="lazy">
+												<em><span data-ar="ستانلس ستيل رملي" data-en="Apple-sand stainless steel">Apple-sand stainless steel</span></em>
+											</span>
+										</label>
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][side_wall]" value="Lacquered glass (matte black)" data-idx="1" >
+											<span>
+												<img src="./assets/img/mat-matte-black-glass.webp" alt="" loading="lazy">
+												<em><span data-ar="زجاج مطلي (أسود مطفي)" data-en="Lacquered glass (matte black)">Lacquered glass (matte black)</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="rear_wall" data-label-en="Rear wall" data-label-ar="الجدار الخلفي">
+								<span class="part-name"><span data-ar="الجدار الخلفي" data-en="Rear wall">Rear wall</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][rear_wall]" value="Lacquered glass (matte black)" data-idx="0" >
+											<span>
+												<img src="./assets/img/mat-matte-black-glass.webp" alt="" loading="lazy">
+												<em><span data-ar="زجاج مطلي (أسود مطفي)" data-en="Lacquered glass (matte black)">Lacquered glass (matte black)</span></em>
+											</span>
+										</label>
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][rear_wall]" value="Lacquered glass (warm white)" data-idx="1"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-warm-white-glass.webp" alt="" loading="lazy">
+												<em><span data-ar="زجاج مطلي (أبيض دافئ)" data-en="Lacquered glass (warm white)">Lacquered glass (warm white)</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="floor" data-label-en="Floor" data-label-ar="الأرضية">
+								<span class="part-name"><span data-ar="الأرضية" data-en="Floor">Floor</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][floor]" value="Lightning Beige marble" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-lightning-beige.webp" alt="" loading="lazy">
+												<em><span data-ar="رخام بيج Lightning" data-en="Lightning Beige marble">Lightning Beige marble</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="handrail" data-label-en="Handrail" data-label-ar="الدرابزين">
+								<span class="part-name"><span data-ar="الدرابزين" data-en="Handrail">Handrail</span></span>
+								<div class="part-options">
+																			<label class="mat">
+											<input type="radio" name="cabin_part[XTQ02-2312][handrail]" value="Apple-sand stainless steel" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/mat-apple-sand.webp" alt="" loading="lazy">
+												<em><span data-ar="ستانلس ستيل رملي" data-en="Apple-sand stainless steel">Apple-sand stainless steel</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+																				<div class="part-row" data-part="cop" data-label-en="Control panel (COP)" data-label-ar="لوحة التحكم">
+								<span class="part-name"><span data-ar="لوحة التحكم" data-en="Control panel (COP)">Control panel (COP)</span></span>
+								<div class="part-options">
+																			<label class="mat mat-cop">
+											<input type="radio" name="cabin_part[XTQ02-2312][cop]" value="XCP33-A (wall-mounted touch screen)" data-idx="0"  checked="checked">
+											<span>
+												<img src="./assets/img/cop-xcp33-a.webp" alt="" loading="lazy">
+												<em><span data-ar="XCP33-A (شاشة لمس على الجدار)" data-en="XCP33-A (wall-mounted touch screen)">XCP33-A (wall-mounted touch screen)</span></em>
+											</span>
+										</label>
+																	</div>
+							</div>
+											</div>
+
+											<p class="cabin-note"><span data-ar="الجدار الأمامي: ستانلس ستيل رملي، أسود تيتانيوم" data-en="Front wall: Apple-sand stainless steel, titanium black">Front wall: Apple-sand stainless steel, titanium black</span></p>
+									</div>
+			</div>
+		
+		<label class="scheme-unsure">
+			<input type="radio" name="cabin_design" value="Not sure – please recommend">
+			<span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" stroke-width="2.4"/></svg><span data-ar="لست متأكداً — اقترحوا عليّ تصميماً" data-en="Not sure yet — recommend a design for me">Not sure yet — recommend a design for me</span></span>
+		</label>
+	</div>
+
+	<div class="field-row">
+		<label><span><span data-ar="الاسم الكامل" data-en="Full name">Full name</span> *</span><input name="name" required autocomplete="name"></label>
+		<label><span><span data-ar="الهاتف / واتساب" data-en="Phone / WhatsApp">Phone / WhatsApp</span> *</span><input name="phone" type="tel" required autocomplete="tel" dir="ltr"></label>
+	</div>
+	<div class="field-row">
+		<label><span><span data-ar="البريد الإلكتروني" data-en="Email">Email</span></span><input name="email" type="email" autocomplete="email" dir="ltr"></label>
+		<label><span><span data-ar="الإمارة / المدينة" data-en="Emirate / City">Emirate / City</span></span>
+			<select name="city">
+				<option>Abu Dhabi</option><option>Dubai</option><option>Sharjah</option><option>Ajman</option><option>Umm Al Quwain</option><option>Ras Al Khaimah</option><option>Fujairah</option><option>Al Ain</option><option value="Other">Other / أخرى</option>
+			</select>
+		</label>
+	</div>
+	<label><span><span data-ar="نوع المشروع" data-en="Project type">Project type</span></span>
+		<select name="project_type">
+			<option value="Villa / private home">Villa / private home — فيلا / منزل خاص</option>
+			<option value="Residential building">Residential building — مبنى سكني</option>
+			<option value="Commercial / office">Commercial / office — تجاري / مكاتب</option>
+			<option value="Hotel / hospital / mall">Hotel / hospital / mall — فندق / مستشفى / مول</option>
+			<option value="Industrial / warehouse">Industrial / warehouse — صناعي / مستودع</option>
+			<option value="Government">Government — جهة حكومية</option>
+		</select>
+	</label>
+	<label><span><span data-ar="تفاصيل المشروع" data-en="Project details">Project details</span></span><textarea name="message" rows="4" placeholder="e.g. 3-stop home elevator for a G+2 villa" data-ar-placeholder="مثال: مصعد منزلي 3 وقفات لفيلا أرضي + طابقين"></textarea></label>
+
+	<div class="btn-row">
+		<button type="submit" class="btn btn-primary btn-lg"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12 20 4l-4 16-4-6.5z"/><path d="m12 13.5 8-9.5"/></svg><span data-ar="إرسال الطلب" data-en="Send request">Send request</span></button>
+		<a href="https://wa.me/971505030272?text=Hello%20Platinum%2C%20I%20would%20like%20a%20quotation." class="btn btn-outline btn-lg" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg><span data-ar="أو راسلنا واتساب" data-en="Or WhatsApp us">Or WhatsApp us</span></a>
+	</div>
+</form>
+		</div>
+	</section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+	<div class="footer-glow" aria-hidden="true"></div>
+	<div class="container footer-cta">
+		<div>
+			<h2><span data-ar="جاهز لبدء مشروعك؟" data-en="Ready to start your project?">Ready to start your project?</span></h2>
+			<p><span data-ar="استشارة مجانية · شريك واحد لخمسة أنظمة للمباني." data-en="Free consultation · One partner for five building systems.">Free consultation · One partner for five building systems.</span></p>
+		</div>
+		<div class="btn-row">
+			<a href="request-a-quote.html" class="btn btn-light"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+			<a href="https://wa.me/971505030272" class="btn btn-ghost" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg><span data-ar="راسلنا على واتساب" data-en="WhatsApp Us">WhatsApp Us</span></a>
+		</div>
+	</div>
+
+	<div class="container footer-grid">
+		<div class="footer-brand">
+			<a href="index.html" class="brand brand-light"><img src="./assets/img/logo-mark-white.png" alt="" class="brand-mark" width="46" height="44"><span class="brand-text"><strong>PLATINUM</strong><small>INTEGRATED SOLUTIONS</small></span></a>
+			<p><span data-ar="حلول متكاملة لمبانٍ أكثر ذكاءً، كفاءةً وأماناً." data-en="Integrated solutions for smarter, more efficient and safer buildings.">Integrated solutions for smarter, more efficient and safer buildings.</span></p>
+			<div class="social">
+															<a href="https://www.facebook.com/p/Platinum-elevator-UAE-100065233383261/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M14 8.5V7c0-.8.5-1 1-1h2V3h-3c-2.6 0-3.5 1.8-3.5 3.8v1.7H8V12h2.5v9H14v-9h2.6l.4-3.5z"/></svg></a>
+																				<a href="https://www.instagram.com/platinum.elevators/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+																				<a href="https://www.linkedin.com/company/platinum-elevator/" target="_blank" rel="noopener" aria-label="Linkedin"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M4.5 9.5h3v10h-3zM6 4a1.7 1.7 0 1 1 0 3.4A1.7 1.7 0 0 1 6 4zM10 9.5h2.9v1.4c.5-.9 1.6-1.6 3.2-1.6 3 0 3.9 1.9 3.9 4.6v5.6h-3v-5c0-1.3-.3-2.4-1.7-2.4s-2.2 1-2.2 2.5v4.9H10z"/></svg></a>
+																				<a href="https://www.youtube.com/@platinumelevator3054" target="_blank" rel="noopener" aria-label="Youtube"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M21 8.2a2.6 2.6 0 0 0-1.8-1.8C17.6 6 12 6 12 6s-5.6 0-7.2.4A2.6 2.6 0 0 0 3 8.2 27 27 0 0 0 2.6 12c0 1.3.1 2.6.4 3.8a2.6 2.6 0 0 0 1.8 1.8c1.6.4 7.2.4 7.2.4s5.6 0 7.2-.4a2.6 2.6 0 0 0 1.8-1.8c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10.2 14.6V9.4l4.5 2.6z"/></svg></a>
+												</div>
+		</div>
+		<div>
+			<h5><span data-ar="الأقسام" data-en="Divisions">Divisions</span></h5>
+			<ul>
+									<li><a href="elevators.html" style="--c:#2F6BFF"><span class="dot"></span><span data-ar="بلاتينيوم للمصاعد" data-en="Platinum Elevator">Platinum Elevator</span></a></li>
+									<li><a href="hvac.html" style="--c:#00B4D8"><span class="dot"></span><span data-ar="بلاتينيوم للتكييف" data-en="Platinum HVAC">Platinum HVAC</span></a></li>
+									<li><a href="smart-homes.html" style="--c:#8B5CF6"><span class="dot"></span><span data-ar="بلاتينيوم للمنازل الذكية" data-en="Platinum Smart Homes">Platinum Smart Homes</span></a></li>
+									<li><a href="security-systems.html" style="--c:#F59E0B"><span class="dot"></span><span data-ar="بلاتينيوم للأنظمة الأمنية" data-en="Platinum Security System">Platinum Security System</span></a></li>
+									<li><a href="fire-doors.html" style="--c:#EF4444"><span class="dot"></span><span data-ar="بلاتينيوم للأبواب المقاومة للحريق" data-en="Platinum Fire Door">Platinum Fire Door</span></a></li>
+							</ul>
+		</div>
+		<div>
+			<h5><span data-ar="الشركة" data-en="Company">Company</span></h5>
+							<ul>
+					<li><a href="about.html"><span data-ar="من نحن" data-en="About us">About us</span></a></li>
+					<li><a href="about.html#certifications"><span data-ar="الشهادات" data-en="Certifications">Certifications</span></a></li>
+					<li><a href="index.html#projects"><span data-ar="مشاريعنا" data-en="Projects">Projects</span></a></li>
+					<li><a href="news.html"><span data-ar="الأخبار" data-en="News">News</span></a></li>
+					<li><a href="request-a-quote.html"><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a></li>
+					<li><a href="contact.html"><span data-ar="تواصل معنا" data-en="Contact">Contact</span></a></li>
+				</ul>
+					</div>
+		<div>
+			<h5><span data-ar="تواصل معنا" data-en="Get in touch">Get in touch</span></h5>
+			<ul class="ft-contact">
+				<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6.5 6.5l1.5-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.5 1.5C10.6 20.5 3.5 13.4 3.5 5A1.5 1.5 0 0 1 5 3.5z"/></svg><a href="tel:+971505030272" dir="ltr">+971 50 503 0272</a></li>
+				<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg><a href="mailto:Info@platinumelevatorae.com">Info@platinumelevatorae.com</a></li>
+				<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ar="شارع الكورنيش، برج 3 Sails، الطابق H، مكتب 1، أبوظبي" data-en="Corniche Street, 3 Sails Tower, Floor H, Office 1, Abu Dhabi">Corniche Street, 3 Sails Tower, Floor H, Office 1, Abu Dhabi</span></li>
+				<li><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ar="الخليج التجاري، برج Bayswater، مكتب 210، دبي" data-en="Business Bay, Bayswater Tower, Office 210, Dubai">Business Bay, Bayswater Tower, Office 210, Dubai</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container footer-bottom">
+		<span>© 2026 <span data-ar="بلاتينيوم للحلول المتكاملة. جميع الحقوق محفوظة." data-en="Platinum Integrated Solutions. All rights reserved.">Platinum Integrated Solutions. All rights reserved.</span></span>
+		<span><span data-ar="نبني التميّز… ونرتقي بالمجتمعات." data-en="We Build Excellence… and Elevate Communities.">We Build Excellence… and Elevate Communities.</span></span>
+	</div>
+</footer>
+
+<!-- Floating actions -->
+<div class="fab-stack">
+	<a href="https://wa.me/971505030272" class="fab fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg></a>
+	<button type="button" class="fab fab-chat" id="chatOpen" aria-controls="chatPanel" aria-expanded="false">
+		<span class="fab-chat-icon"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="7.5" width="15" height="11" rx="3"/><path d="M12 4v3.5M9 12.5h.01M15 12.5h.01" stroke-width="2"/><path d="M9.5 15.5h5M2.5 12v2.5M21.5 12v2.5"/></svg></span>
+		<span class="fab-chat-label"><span data-ar="مساعدك التقني" data-en="Your Tech Assistant">Your Tech Assistant</span></span>
+		<span class="fab-ping" aria-hidden="true"></span>
+	</button>
+</div>
+<a href="request-a-quote.html" class="mobile-quote-bar"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+
+<section class="chat-panel" id="chatPanel" role="dialog" aria-modal="false" aria-labelledby="chatTitle" hidden>
+	<header class="chat-head">
+		<div class="chat-avatar"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="7.5" width="15" height="11" rx="3"/><path d="M12 4v3.5M9 12.5h.01M15 12.5h.01" stroke-width="2"/><path d="M9.5 15.5h5M2.5 12v2.5M21.5 12v2.5"/></svg><span class="online"></span></div>
+		<div>
+			<strong id="chatTitle"><span data-ar="مساعدك التقني" data-en="Your Tech Assistant">Your Tech Assistant</span></strong>
+			<small><span data-ar="بلاتينيوم للحلول المتكاملة · يرد فوراً" data-en="Platinum Integrated Solutions · usually replies instantly">Platinum Integrated Solutions · usually replies instantly</span></small>
+		</div>
+		<button type="button" class="chat-close" id="chatClose" aria-label="Close"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+	</header>
+	<div class="chat-body" id="chatBody" aria-live="polite">
+		<div class="msg bot"><div class="bubble"><span data-ar="مرحباً! 👋 أنا المساعد التقني لبلاتينيوم. اسألني أي شيء عن المصاعد، التكييف، المنازل الذكية، الأنظمة الأمنية أو أبواب الحريق." data-en="Hi! 👋 I’m the Platinum tech assistant. Ask me anything about our elevators, HVAC, smart homes, security systems or fire doors.">Hi! 👋 I’m the Platinum tech assistant. Ask me anything about our elevators, HVAC, smart homes, security systems or fire doors.</span></div></div>
+	</div>
+	<div class="chat-suggest" id="chatSuggest">
+		<button type="button"><span data-ar="هل يمكن تركيب مصعد في فيلا قائمة؟" data-en="Can I add an elevator to my existing villa?">Can I add an elevator to my existing villa?</span></button>
+		<button type="button"><span data-ar="ما أنظمة التكييف التي تقدمونها؟" data-en="Which HVAC systems do you offer?">Which HVAC systems do you offer?</span></button>
+		<button type="button"><span data-ar="ما تصنيف مقاومة أبوابكم للحريق؟" data-en="What fire ratings do your doors have?">What fire ratings do your doors have?</span></button>
+		<button type="button"><span data-ar="أين تقع مكاتبكم؟" data-en="Where are your offices?">Where are your offices?</span></button>
+	</div>
+	<form class="chat-form" id="chatForm" autocomplete="off">
+		<input type="text" id="chatInput" maxlength="600" placeholder="Type your question…" data-ar-placeholder="اكتب سؤالك…" aria-label="Message">
+		<button type="submit" aria-label="Send"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12 20 4l-4 16-4-6.5z"/><path d="m12 13.5 8-9.5"/></svg></button>
+	</form>
+	<div class="chat-foot">
+		<a href="request-a-quote.html"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-ar="اطلب عرض سعر" data-en="Request a Quote">Request a Quote</span></a>
+		<a href="https://wa.me/971505030272" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.1a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.6zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg><span data-ar="تحدث مع موظف" data-en="Talk to a person">Talk to a person</span></a>
+	</div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden>
+	<button type="button" class="lb-close" aria-label="Close"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+	<img src="" alt="">
+</div>
+
+<script>var PIS_CHAT={"endpoint":"demo-chat","quoteUrl":"request-a-quote.html","whatsapp":"https://wa.me/971505030272","phone":"+971 50 503 0272"};</script>
+<script src="demo.js"></script>
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/chat.js"></script>
+</body>
+</html>
